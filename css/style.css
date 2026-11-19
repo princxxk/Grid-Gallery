@@ -144,35 +144,47 @@ body {
 @media (max-width: 900px) {
     body {
         height: auto;
-        min-height: 100vh;
-        overflow-x: hidden;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .gallery-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
-        margin: 15px auto;
-        padding: 0 8px;
-        gap: 6px;
-    }
-
-    .col-center {
-        flex: none;
-        width: 100%;
-        height: 340px;
+        padding: 0 10px;
     }
 
     .col-side,
-    .col-pillar {
+    .col-pillar,
+    .col-center {
         flex: none;
-        width: calc(50% - 3px);
-        height: 240px;
+        width: 100%;
     }
 
-    .box {
-        border-radius: 10px;
+    .center-mid-row,
+    .center-split-row {
+        flex-direction: column;
+    }
+
+    .mid-side-stack {
+        flex-direction: row;
+    }
+
+    .col-side .box.sq,
+    .col-side .box.tall,
+    .col-pillar .box.full,
+    .box.fav,
+    .box.banner,
+    .box.half-banner {
+        flex: none;
+        width: 100%;
+        height: 170px;
+    }
+
+    .mid-side-stack .box.sq {
+        flex: 1;
+        width: auto;
+        height: 140px;
     }
 
     .box:hover {
