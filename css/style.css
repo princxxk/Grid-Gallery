@@ -181,28 +181,26 @@ body {
 
     .gallery-container {
         flex-direction: row;
-        flex-wrap: wrap;
-        height: auto;
-        margin: 15px auto;
-        padding: 0 8px;
-        gap: 6px;
-    }
-
-    .col-center {
-        flex: none;
-        width: 100%;
-        height: 340px;
+        height: 55vh;
+        min-height: 360px;
+        margin: 20px auto;
+        padding: 0 6px;
+        gap: 4px;
     }
 
     .col-side,
-    .col-pillar {
-        flex: none;
-        width: calc(50% - 3px);
-        height: 240px;
+    .col-center,
+    .mid-side-stack {
+        gap: 4px;
+    }
+
+    .center-mid-row,
+    .center-split-row {
+        gap: 4px;
     }
 
     .box {
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     .box:hover {
