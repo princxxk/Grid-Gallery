@@ -139,3 +139,72 @@ body {
 .box:hover::after {
     opacity: 1;
 }
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        height: auto;
+        margin: 12px auto;
+        padding: 0 10px;
+        gap: 8px;
+    }
+
+    .col-side,
+    .col-pillar,
+    .col-center,
+    .center-mid-row,
+    .center-split-row {
+        flex: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .mid-side-stack {
+        flex: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .box.sq,
+    .mid-side-stack .box.sq,
+    .box.fav,
+    .box.half-banner {
+        flex: none;
+        width: calc(50% - 4px);
+        height: 150px;
+    }
+
+    .box.tall,
+    .box.full,
+    .box.banner {
+        flex: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .box:hover {
+        transform: none;
+    }
+
+    .box:hover img {
+        transform: none;
+    }
+
+    .box::after {
+        opacity: 1;
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+}
