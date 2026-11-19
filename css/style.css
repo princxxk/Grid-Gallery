@@ -140,36 +140,6 @@ body {
     opacity: 1;
 }
 
-@media (max-width: 1024px) {
-    body {
-        height: auto;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    .gallery-container {
-        flex-direction: column;
-        height: auto;
-        padding: 0 10px;
-    }
-
-    .col-side,
-    .col-pillar,
-    .col-center {
-        flex: none;
-        width: 100%;
-    }
-
-    .col-pillar .box.full {
-        height: 320px;
-    }
-
-    .col-side .box.sq,
-    .col-side .box.tall {
-        height: 220px;
-    }
-}
-
 /* Responsive Styles */
 @media (max-width: 900px) {
     body {
